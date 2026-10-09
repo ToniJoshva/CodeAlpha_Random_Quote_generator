@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Login Model</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #111827, #374151, #f97316);
+            background-size: cover;
+        }
+
+        .login-box {
+            width: 350px;
+            padding: 35px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 115, 0, 0.6);
+        }
+
+        .logo {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ff8c00;
+            text-shadow: 2px 2px 0px #fff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #ddd;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 13px;
+            margin: 12px 0;
+            border: none;
+            border-radius: 8px;
+            background: #f3f4f6;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 13px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #ff7300;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #e85d00;
+        }
+
+        .forgot {
+            display: block;
+            margin-top: 18px;
+            color: #ffae42;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .or {
+            color: #aaa;
+            margin: 20px 0;
+        }
+
+        .social-btn {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .google {
+            background: white;
+            color: #333;
+        }
+
+        .facebook {
+            background: #1877f2;
+            color: white;
+        }
+
+        .signup {
+            color: #ccc;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        .signup a {
+            color: #ffae42;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <div class="logo">FREE FIRE</div>
+        <p class="subtitle">Battle Begins Here 🔥</p>
+
+        <form onsubmit="demoLogin(event)">
+            <input
+                type="text"
+                class="input-box"
+                placeholder="Username or Email"
+                required
+            >
+
+            <input
+                type="password"
+                class="input-box"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit" class="login-btn">
+                LOGIN
+            </button>
+        </form>
+
+        <a href="#" class="forgot">Forgot Password?</a>
+
+        <div class="or">──── OR ────</div>
+
+        <button class="social-btn google" onclick="demoMessage()">
+            Continue with Google
+        </button>
+
+        <button class="social-btn facebook" onclick="demoMessage()">
+            Continue with Facebook
+        </button>
+
+        <p class="signup">
+            Don't have an account?
+            <a href="#" onclick="demoMessage()">Sign Up</a>
+        </p>
+
+    </div>
+
+    <script>
+        function demoLogin(event) {
+            event.preventDefault();
+            alert("Demo login only — no information was submitted.");
+        }
+
+        function demoMessage() {
+            alert("This is a demo button. Official login is not connected.");
+        }
+    </script>
+
+</body>
+</html>
